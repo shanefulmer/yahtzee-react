@@ -1,1 +1,1 @@
-Yahtzee game built with React. Play live at [http://shanefulmer.com/yahtzee](http://shanefulmer.com/yahtzee).
+Yahtzee game built with React. Play at [http://shanefulmer.com/yahtzee](http://shanefulmer.com/yahtzee).
