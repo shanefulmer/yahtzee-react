@@ -1,0 +1,315 @@
+.App {
+  text-align: center;
+  padding: 100px 110px 100px 110px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.diceContainer {
+  font-size: 8em;
+  line-height: 0;
+  text-align:left;
+  padding-left: 20px;
+}
+
+.diceContainer .dice {
+  margin: 0 4px;
+}
+
+.die {
+  display: inline-block;
+  border-radius: 16px;
+  border: 1px solid rgb(102,101,90);
+  box-shadow: 0 3px 8px 1px rgb(60,60,60);
+
+  background: #1e5799; 
+  background: -moz-linear-gradient(top, #1e5799 0%, #207cca 0%, #fdfdf5 0%, #cdceb8 100%);
+  background: -webkit-linear-gradient(top, #1e5799 0%,#207cca 0%,#fdfdf5 0%,#cdceb8 100%); 
+  background: linear-gradient(to bottom, #1e5799 0%,#207cca 0%,#fdfdf5 0%,#cdceb8 100%);
+
+  z-index: 10;
+}
+
+.die.empty {
+  background: none;
+  box-shadow: 0 0 0px 5px white;
+  border: 0;
+}
+
+.die:hover {
+  box-shadow: 0 0 0px 5px rgb(168, 52, 44);
+  /*outline: 5px solid black;*/
+}
+
+table.scorecard {
+  margin-bottom: .5rem;
+}
+
+.scorecard td {
+  padding: 2px 10px 2px 0;
+}
+
+.table tr:hover {
+  background-color: transparent;
+}
+
+.cardSection td {
+  background-color: rgb(120, 167, 75);
+  color: white;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.cardTitle {
+  background-color: rgb(120, 167, 75);
+  color: white;
+  padding: 10px;
+  font-size: 32px;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+}
+
+.cardContainer {
+  background-color: rgb(145, 119, 94);
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.3);
+}
+
+.cardInnerContainer {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.3);
+}
+
+.playContainerOuter {
+  background-color: rgb(132, 184, 84);
+  border-radius: 24px;
+  padding: 10px;
+  height: 100%;
+}
+
+.playContainer {
+  background: rgb(118, 168, 73);
+  background: linear-gradient(#6e9f40, #7ead4f);
+
+  height: 100%;
+  border-radius: 18px;
+
+  -webkit-box-shadow:    inset 0 0 20px rgba(0,0,0,0.4);
+  -moz-box-shadow:    inset 0 0 20px rgba(0,0,0,0.4);
+  box-shadow:    inset 0 0 20px rgba(0,0,0,0.4);
+}
+
+.rollingDice {
+  height: 650px;
+  font-size: 8em;
+  padding-top: 100px;
+}
+
+.rollingDice .columns {
+  margin-top: 0;
+}
+
+.rollingDice .column {
+  z-index: 10;
+}
+
+td.scoreCell {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  font-size: 28px;
+  color: rgb(84, 84, 84);
+  width: 30%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+td.possibleScoreCell {
+  color: rgb(118, 166, 73);
+}
+
+td.buttonCell {
+  text-align: center;
+  padding-top: 8px;
+}
+
+td.sectionCell {
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+td.bonusCell {
+  color: rgb(212, 136, 121);
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  vertical-align: middle;
+  padding-bottom: 8px;
+}
+
+.scoreButton {
+  background-color: rgb(118, 166, 73);
+  color: white;
+  border-radius: 20px;
+  width: 80%;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 4px solid rgb(127, 140, 75);
+  padding: 1px 5px 2px 5px;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.scoreButton:hover {
+  background-color: rgb(111, 158, 70);
+  color: white;
+}
+
+.scoreButton.disabled {
+  background-color: rgb(175, 171, 156);
+  border-bottom: 4px solid rgb(156, 152, 142);
+}
+
+.totalLevel {
+  padding-left: 10px;
+}
+
+.totalLabel {
+  color: rgb(248, 248, 213);
+  font-size: 42px;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.total {
+  background-color: rgb(102, 87, 71);
+  border-radius: 8px;
+  color: white;
+  font-family: 'Bangers', cursive;
+  font-size: 42px;
+  padding: 6px 20px 4px 20px;
+  line-height: 1em;
+}
+
+svg {
+  width: 120px;
+  height: 120px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.rollCount {
+  text-align: right;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  margin-right: 16px;
+  margin-top: 8px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.rollButton {
+  background-color: rgb(168, 46, 37);
+  border-bottom: 12px solid rgb(143, 36, 33);
+  width: 2.2em;
+  height: 2.2em;
+  border-radius: 100%;
+  font-size: 6em;
+  display: block;
+  margin: 0 auto;
+
+  position: relative;
+  top: -40px;
+}
+
+.rollButton .fa-refresh {
+  color: rgb(246, 246, 208);
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.rollButton:active {
+  background-color: rgb(158, 43, 35);
+}
+
+.rollButton:active .fa-refresh {
+  top: 54%;
+}
+
+.rollButton .fa {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .shaker {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+.shaker {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+}
+
+.logo {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  width: 150px;
+}
+
+.holdContainer {
+  display: inline-block;
+}
+
+.tagLine {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.tagLine a {
+  color: rgb(118, 168, 73);
+}
+
+.tagLine .fa {
+  display: inline;
+}
+
+.columns.mainArea {
+  margin-bottom: 0;
+}
