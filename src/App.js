@@ -5,6 +5,7 @@ import RollingDice from './components/RollingDice';
 import ScoreCard from './components/ScoreCard';
 import Yahtzee from './gameLogic/Yahtzee';
 import GameState from './GameState';
+import Rules from './Rules';
 import _ from 'lodash';
 import { rollDie } from './gameLogic/helpers';
 import logo from './logo.png';
@@ -86,6 +87,10 @@ class App extends Component {
           </div>
         </div>
         <p className='tagLine'> Made with <i className='fa fa-heart'></i> by <a href='http://shanefulmer.com'>Shane Fulmer</a> using <a href='https://facebook.github.io/react'>ReactJS</a></p>
+
+        <br />
+        <br />
+        <Rules />
       </div>
     );
   }
