@@ -65,12 +65,10 @@ class App extends Component {
             <div className='playContainerOuter'>
               <div className='playContainer'>
                 <RollingDice dice={this.state.rolledDice} selected={this.holdDie} />
-                <div className='columns'>
+                <div className='columns bottom-section'>
                   <div className='column is-three-quarters'>
-                    <div className='holdContainer'>
-                      <HeldDice dice={this.state.heldDice} selected={this.unholdDie}/>
-                      <div className={`rollCount ${this.state.gameState === GameState.GameOver ? 'hide' : ''}`}><p>{this.state.rollsLeft} Rolls Remaining</p></div>
-                    </div>
+                    <HeldDice dice={this.state.heldDice} selected={this.unholdDie}/>
+                    <div className={`rollCount ${this.state.gameState === GameState.GameOver ? 'hide' : ''}`}><p>{this.state.rollsLeft} Rolls Remaining</p></div>
                   </div>
                   <div className='column'>
                     <a className='rollButton' onClick={this.handleRollClick}>

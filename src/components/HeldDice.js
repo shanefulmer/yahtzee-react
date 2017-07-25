@@ -5,7 +5,7 @@ export default function HeldDice(props) {
   const dice = props.dice.map((x, i) => {
     let die = <Die key={i} index={i} value={x} selected={props.selected} />;
     if (x === 0) 
-      die = <svg key={i} className='die empty'></svg>;
+      die = <svg viewBox='0 0 120 120' key={i} className='die empty'></svg>;
     return die;
   });
 

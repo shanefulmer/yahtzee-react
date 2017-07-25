@@ -11,7 +11,7 @@ export default function Die(props) {
     "6": <Die6 />
   }
   return (
-    <svg className='die' onClick={() => props.selected(props.index)}>
+    <svg className='die rolling' viewBox='0 0 120 120' onClick={() => props.selected(props.index)}>
       <circle cx='60' cy='60' r='60' fill='rgb(236, 236, 220)'/>
       <g fill='rgb(168, 52, 44)'>
         {renderers[props.value]}

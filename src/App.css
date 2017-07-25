@@ -18,11 +18,14 @@
   font-size: 8em;
   line-height: 0;
   text-align:left;
-  padding-left: 20px;
 }
 
 .diceContainer .dice {
   margin: 0 4px;
+}
+
+.rolling {
+  width: 60%;
 }
 
 .die {
@@ -43,6 +46,8 @@
   background: none;
   box-shadow: 0 0 0px 5px white;
   border: 0;
+  margin: 0 1.5%;
+  width: 17%;
 }
 
 .die:hover {
@@ -67,7 +72,7 @@ table.scorecard {
   color: white;
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
-  font-size: 28px;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -167,7 +172,7 @@ td.bonusCell {
   background-color: rgb(118, 166, 73);
   color: white;
   border-radius: 20px;
-  width: 80%;
+  width: 90%;
   font-family: 'Nunito', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
@@ -210,12 +215,12 @@ td.bonusCell {
   line-height: 1em;
 }
 
-svg {
+/*svg {
   width: 120px;
   height: 120px;
   margin: 0 10px;
   cursor: pointer;
-}
+}*/
 
 .rollCount {
   text-align: right;
@@ -235,7 +240,7 @@ svg {
   width: 2.2em;
   height: 2.2em;
   border-radius: 100%;
-  font-size: 6em;
+  font-size: 5em;
   display: block;
   margin: 0 auto;
 
@@ -293,8 +298,8 @@ svg {
   width: 150px;
 }
 
-.holdContainer {
-  display: inline-block;
+.bottom-section {
+  padding: 20px;
 }
 
 .tagLine {

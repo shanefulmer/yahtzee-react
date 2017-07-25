@@ -64,7 +64,7 @@ export default class Rules extends Component {
 
     let rows = values.map(x => {
       return (
-        <tr>
+        <tr key={x.section}>
           <td>{x.section}</td>
           <td>{x.description}</td>
           <td>{x.points}</td>
@@ -97,8 +97,6 @@ export default class Rules extends Component {
           <p>The scorecard is divided into an Upper Section and a Lower Section. Scoring combinations for each section are detailed in the below table:</p>
 
           <h2 className='title'>Upper Section</h2>
-          <table>
-          </table>
 
           <p>If you score in the upper section of the table, your score is the total of the combined dice. For example, if you score 5/3/5/4/5 and score in the Fives category, your total for the category would be 15, because there are three fives and these are added together. If the One, Two or Six Categories were selected for scoring with this roll, you would score a zero. If placed in the Three or Four category, you would score 3 and 4 respectively. Bonus: If the total of the upper section scores is 63 or more, you get a bonus of 35 (63 is the total of three each of 1s, 2s, 3s, 4s, 5s and 6s).</p>
 
@@ -112,7 +110,9 @@ export default class Rules extends Component {
                 <thead>
                   <tr><td>Section</td><td>Description</td><td>Points</td></tr>
                 </thead>
-                {rows}
+                <tbody>
+                  {rows}
+                </tbody>
               </table>
             </div>
           </article>

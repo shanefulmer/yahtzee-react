@@ -2,6 +2,7 @@
   "name": "yahtzee-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://shanefulmer.com/yahtzee/",
   "dependencies": {
     "bulma": "^0.4.0",
     "enumify": "^1.0.4",
